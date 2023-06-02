@@ -46,6 +46,10 @@ import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {AutofocusDirective} from './dir/autofocus-dir';
 import {BaseComponent} from './components/base/base.component';
 import {environment} from '../environments/environment';
+import { PersonComponent } from './pages/person/person.component';
+import { TaskComponent } from './pages/task/task.component';
+import { MealComponent } from './pages/meal/meal.component';
+import { TeamComponent } from './pages/team/team.component';
 
 export const authConfig: AuthConfig = {
   issuer: 'http://localhost:8080/realms/ILV',
@@ -89,7 +93,11 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     EmployeeDetailComponent,
     VehicleUsageDetailComponent,
     AutofocusDirective,
-    BaseComponent
+    BaseComponent,
+    PersonComponent,
+    TaskComponent,
+    MealComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
